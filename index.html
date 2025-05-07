@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>W dev Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Use a clean modern font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <!-- SVG Logo -->
+        <svg width="48" height="48" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="48" stroke="#0ff" stroke-width="4" fill="transparent"/>
+          <text x="50%" y="55%" fill="#0ff" font-family="Inter" font-size="50" text-anchor="middle" alignment-baseline="middle">W</text>
+        </svg>
+        <span>W dev</span>
+      </div>
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#work">My Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="panel">
+    <h1 class="reveal">Crafting Digital Experiences</h1>
+    <p class="reveal delay-1">A 15yo ready to build website according to your request.....is'nt that all you need...?</p>
+    <button class="button reveal delay-2" onclick="scrollToSection('work')">See My Work</button>
+  </section>
+
+  <!-- MY WORK -->
+  <section id="work" class="panel alt">
+    <h2 class="reveal">My Work</h2>
+    <div class="grid">
+      <div class="card reveal delay-1">
+        <h3>Project A</h3>
+        <p class="body-text">Responsive website built with HTML, CSS, and vanilla JavaScript.</p>
+      </div>
+      <div class="card reveal delay-2">
+        <h3>Project B</h3>
+        <p class="body-text">Interactive UI prototype featuring CSS animations and 3D effects.</p>
+      </div>
+      <div class="card reveal delay-3">
+        <h3>Project C</h3>
+        <p class="body-text">Scroll‑triggered storytelling with smooth transitions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="panel">
+    <h2 class="reveal">About Me</h2>
+    <p class="reveal delay-1 body-text">
+      I’m a front‑end developer passionate about pixel‑perfect design, fluid interactions, and immersive 3D backgrounds. I use Inter font, CSS 3D transforms, and the Web Animations API to bring ideas to life....and also i can negociate !
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="panel alt">
+    <h2 class="reveal">Contact</h2>
+    <a href="https://instagram.com/that1_w_dev" target="_blank" class="button reveal delay-1">Say Hello</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
